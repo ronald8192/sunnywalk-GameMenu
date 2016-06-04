@@ -1,0 +1,17 @@
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/ronald8192/UnityWorkspace/Menu/obj/Debug/Assembly-CSharp.dll
+/Users/ronald8192/UnityWorkspace/Menu/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/UnityEngine.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/UnityEditor.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Mono.Cecil.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Unity.DataContract.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/ronald8192/UnityWorkspace/Menu/Temp/bin/Debug/Mono.Cecil.Mdb.dll
