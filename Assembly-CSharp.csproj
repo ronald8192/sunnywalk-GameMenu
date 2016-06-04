@@ -49,6 +49,7 @@
      <Compile Include="Assets\DropdownStudentList.cs" />
      <Compile Include="Assets\Main.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\AsyncStudentsInfoGetter.cs" />
+     <Compile Include="Assets\Scenes\menu\scripts\SpawnObjectButtonControl.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\StudentDropdownControl.cs" />
      <Compile Include="Assets\SimpleJSON.cs" />
      <Compile Include="Assets\Student.cs" />

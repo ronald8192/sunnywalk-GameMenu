@@ -33,13 +33,13 @@ public class ClickBall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log("[TRACE] update");
-		if(Input.GetMouseButtonDown(0)){
-			Debug.Log("Pressed left click.");
-
-			// your task 
-			
-		}
+//		Debug.Log("[TRACE] update");
+//		if(Input.GetMouseButtonDown(0)){
+//			Debug.Log("Pressed left click.");
+//
+//			// your task 
+//			
+//		}
 	}
 
 	
