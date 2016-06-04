@@ -12,11 +12,15 @@ public class StudentDropdownControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		//Get lsit of students
+		//get instance of `AsyncStudentsInfoGetter`
 		AsyncStudentsInfoGetter infoGetter = gameObject.AddComponent<AsyncStudentsInfoGetter>();
+		//set callback
 		infoGetter.SetCallback((data) => {
 			WWW download = (WWW)data;
+			//check download is success or not
 			if(string.IsNullOrEmpty(download.error)) {
-				//response text
+				//success, response text
 				Debug.Log(download.text);
 				var jObj = JSON.Parse(download.text);
 				for (int i=0;i<jObj.Count;i++){
@@ -28,17 +32,10 @@ public class StudentDropdownControl : MonoBehaviour {
 					s.SetGender(jObj[i]["gender"].Value);
 
 					studentList.Add(s);
-
-//					Debug.Log("ToString: " + s.ToString());
-//					Debug.Log(studentList[studentList.Count-1]);
 				}
-
-
-//				GameObject.Find("studentList").GetComponent<Text>().text = "Getted Student:\n ID:" + studInfo.id + " Name:" + studInfo.name;
 			} else {
-				print( "Error downloading: " + download.error );
+				Debug.Log ( "Error downloading: " + download.error );
 			}
-
 		}).Start(); 
 
 
@@ -49,6 +46,11 @@ public class StudentDropdownControl : MonoBehaviour {
 
 	}
 
+	/**
+	 * Insert new item to dropdown
+	 * @params text - the text will show on the dropdown list option
+	 * @return void
+	 **/
 	public void InsertOption(string text){
 		Dropdown.OptionData optionData = new Dropdown.OptionData();
 		optionData.text = text;

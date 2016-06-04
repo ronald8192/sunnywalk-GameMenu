@@ -19,6 +19,10 @@ public class SceneDropdownControl : MonoBehaviour {
 	
 	}
 
+	/**
+	 * Scene dropdown onChange listener,
+	 * save setting to `Main.scene`
+	 **/
 	public void onChange(){
 		Main.scene = sceneDropdown.value + 1;
 	}

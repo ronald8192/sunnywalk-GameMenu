@@ -22,12 +22,10 @@ public class Student : MonoBehaviour {
 
 		Debug.Log("new Student");
 	}
+
 	// Use this for initialization
 	void Start () {
-//		Debug.Log("Student Start()");
-//		Student.getRemoteStudent(1,(student) =>{
-//			Debug.Log(student);
-//		});
+		
 	}
 	
 	// Update is called once per frame
@@ -35,6 +33,9 @@ public class Student : MonoBehaviour {
 	
 	}
 
+	/**
+	 * Not used
+	 **/
 	public static IEnumerator getRemoteStudent(int id, System.Action<object> callback){
 		Debug.Log("getRemoteStudent");
 		string url = "http://127.0.0.1:3000/api/student?id=" + id;
@@ -47,6 +48,9 @@ public class Student : MonoBehaviour {
 		callback(student);
 	}
 
+	/**
+	 * Not used
+	 **/
 	public static Student CreateFromJSON(string jsonString){
 		return JsonUtility.FromJson<Student>(jsonString);
 	}

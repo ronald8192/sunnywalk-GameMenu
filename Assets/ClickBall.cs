@@ -2,6 +2,12 @@
 using System.Collections;
 using UnityEngine.UI;
 
+
+/**
+ * This class is not used in this project,
+ * just a template of using HTTP GET/POST request with callback
+ * 
+ **/
 public class ClickBall : MonoBehaviour {
 
 	// Use this for initialization
