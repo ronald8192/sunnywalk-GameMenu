@@ -44,7 +44,7 @@ public class SpawnObjectButtonControl : MonoBehaviour {
 			button.GetComponent<Image> ().transform.localPosition = new Vector3(x+35,y,z);
 		}
 		spawnObject = !spawnObject;
-
+		Main.spawnObject = spawnObject;
 		
 	}
 }

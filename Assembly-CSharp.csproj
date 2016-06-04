@@ -46,13 +46,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ClickBall.cs" />
-     <Compile Include="Assets\DropdownStudentList.cs" />
      <Compile Include="Assets\Main.cs" />
+     <Compile Include="Assets\SceneDropdownControl.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\AsyncStudentsInfoGetter.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\SpawnObjectButtonControl.cs" />
+     <Compile Include="Assets\Scenes\menu\scripts\Student.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\StudentDropdownControl.cs" />
      <Compile Include="Assets\SimpleJSON.cs" />
-     <Compile Include="Assets\Student.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

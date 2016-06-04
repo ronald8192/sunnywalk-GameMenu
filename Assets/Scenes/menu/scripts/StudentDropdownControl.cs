@@ -29,8 +29,8 @@ public class StudentDropdownControl : MonoBehaviour {
 
 					studentList.Add(s);
 
-					Debug.Log("ToString: " + s.ToString());
-					Debug.Log(studentList[studentList.Count-1]);
+//					Debug.Log("ToString: " + s.ToString());
+//					Debug.Log(studentList[studentList.Count-1]);
 				}
 
 
@@ -61,6 +61,7 @@ public class StudentDropdownControl : MonoBehaviour {
 	 **/
 	public void dd_value_changed(){
 		Student s = GetSelectedStudent();
+		Main.currentStudent = s;
 		if (s == null) {
 			Debug.Log ("Selected index 0");
 		} else {
