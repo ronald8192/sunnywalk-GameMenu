@@ -48,6 +48,7 @@
      <Compile Include="Assets\ClickBall.cs" />
      <Compile Include="Assets\Main.cs" />
      <Compile Include="Assets\SceneDropdownControl.cs" />
+     <Compile Include="Assets\Scenes\menu\scripts\AsyncGameResultUploader.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\AsyncStudentsInfoGetter.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\SpawnObjectButtonControl.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\Student.cs" />
