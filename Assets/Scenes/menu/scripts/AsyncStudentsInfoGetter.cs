@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class AsyncStudentsInfoGetter : MonoBehaviour {
-	string url = "http://sunnywalk.herokuapp.com/api/student/all.json";
+	string url = "https://sunnywalk.herokuapp.com/api/student/all.json";
 	System.Action<object> callback;
 
 	public AsyncStudentsInfoGetter SetCallback(System.Action<object> callback){

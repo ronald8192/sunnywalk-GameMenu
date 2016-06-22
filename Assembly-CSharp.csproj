@@ -50,6 +50,7 @@
      <Compile Include="Assets\SceneDropdownControl.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\AsyncGameResultUploader.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\AsyncStudentsInfoGetter.cs" />
+     <Compile Include="Assets\Scenes\menu\scripts\AsyncTask.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\SpawnObjectButtonControl.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\Student.cs" />
      <Compile Include="Assets\Scenes\menu\scripts\StudentDropdownControl.cs" />

@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/menu/scripts/AsyncStudentsInfoGetter.cs">
+    <Files>
+      <File FileName="Assets/Scenes/menu/scripts/AsyncStudentsInfoGetter.cs" Line="5" Column="21" />
+      <File FileName="Assets/Scenes/menu/scripts/AsyncGameResultUploader.cs" Line="19" Column="46" />
+      <File FileName="Assets/ClickBall.cs" Line="34" Column="7" />
+      <File FileName="Assets/Main.cs" Line="55" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

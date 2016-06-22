@@ -50,11 +50,9 @@ public class Main : MonoBehaviour {
 		resultUploader.SetCallback ((wwwObj) => {
 			WWW download = (WWW)wwwObj;
 
-			//check error by http status code
 			if(string.IsNullOrEmpty(download.error)) {
-				//HTTP 2xx
 				var jObj = JSON.Parse(download.text);
-				if(jObj["status"] == "OK"){
+				if(jObj["status"].Value == "OK"){
 					//success
 
 
@@ -65,7 +63,6 @@ public class Main : MonoBehaviour {
 				}
 
 			}else{
-				//HTTP 4xx / 5xx / ...
 				Debug.Log( "Upload game result error: " + download.error );
 			}
 		}).Start();

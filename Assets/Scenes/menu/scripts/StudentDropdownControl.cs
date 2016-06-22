@@ -11,34 +11,42 @@ public class StudentDropdownControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		
+		//Get list of students
+		AsyncTask asyncTask = gameObject.AddComponent<AsyncTask>();
+		asyncTask.SetUrl ("https://sunnywalk.herokuapp.com/api/student/all.json")
+			.AddQueryParams ("token", "dzfdmpkumxqqgnadd")
+			.AddQueryParams ("secret", "Uor593YqX58xiZGJRAJOlGAtvH6pVIUGkiBxAQfooe0=")
+			.Before((t) => { 
+				AsyncTask task = (AsyncTask) t;
+				Debug.Log("[TRACE][ASYNCTASK] " + task.GetUrl() + task.GetQueryParams());
+			})
+			.Progress((p) => { 
+				float progress;
+				float.TryParse(p.ToString(), out progress);
+				Debug.Log("[TRACE][ASYNCTASK] Progress: " + (progress * 100) + "%"); 
+			})
+			.After((data) => { 
+				WWW download = (WWW) data;
+				//Debug.Log("[INFO][ASYNCTASK] Downloaded: " + download.text); 
+				if(string.IsNullOrEmpty(download.error)) {
+					//success, response text
+					Debug.Log(download.text);
+					var jObj = JSON.Parse(download.text);
+					for (int i=0;i<jObj.Count;i++){
+						InsertOption(jObj[i]["name"].Value);
 
-		//Get lsit of students
-		//get instance of `AsyncStudentsInfoGetter`
-		AsyncStudentsInfoGetter infoGetter = gameObject.AddComponent<AsyncStudentsInfoGetter>();
-		//set callback
-		infoGetter.SetCallback((data) => {
-			WWW download = (WWW)data;
-			//check download is success or not
-			if(string.IsNullOrEmpty(download.error)) {
-				//success, response text
-				Debug.Log(download.text);
-				var jObj = JSON.Parse(download.text);
-				for (int i=0;i<jObj.Count;i++){
-					InsertOption(jObj[i]["name"].Value);
-				
-					Student s = gameObject.AddComponent<Student>(); //CANNOT USE `new Student()` (will return null) ?!?
-					s.SetId(jObj[i]["id"].AsInt);
-					s.SetName(jObj[i]["name"].Value);
-					s.SetGender(jObj[i]["gender"].Value);
+						Student s = gameObject.AddComponent<Student>();
+						s.SetId(jObj[i]["id"].AsInt);
+						s.SetName(jObj[i]["name"].Value);
+						s.SetGender(jObj[i]["gender"].Value);
 
-					studentList.Add(s);
+						studentList.Add(s);
+					}
+				} else {
+					Debug.Log ( "Error downloading: " + download.error );
 				}
-			} else {
-				Debug.Log ( "Error downloading: " + download.error );
-			}
-		}).Start(); 
-
-
+			}).Start();
 	}
 	
 	// Update is called once per frame
